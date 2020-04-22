@@ -3,7 +3,7 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-module "aws-sentinel-backend" {
+module "terraform-aws-splunk-enabler" {
   source       = "github.com/AaronNBrock/s3-backend-resources.git?ref=v0.1.0"
-  backend_name = "jb-aws-sentinel-backend"
+  backend_name = "terraform-aws-splunk-enabler"
 }
