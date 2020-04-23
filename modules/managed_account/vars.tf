@@ -5,36 +5,26 @@ variable "role_arn" {
 
 variable "enable_flowlog" {
   default = true
-  type = bool
-}
-
-variable "enable_sqs" {
-  default = false
-  type = bool
+  type    = bool
 }
 
 variable "enabled" {
   default = true
-  type = bool
-}
-
-variable "bucket_names" {
-  default = ["None"]
-  type = list
+  type    = bool
 }
 
 variable "region" {
   default = "us-east-1"
-  type = string
+  type    = string
 }
 
 variable "endpoint_url" {
-  type = string
+  type        = string
   description = "The URL endpoint for the HEC."
 }
 
 variable "hec_token" {
-  type = string
+  type        = string
   description = "The HEC token to use."
 }
 
