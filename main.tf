@@ -8,3 +8,9 @@ module "managed_account" {
   role_arn = "arn:aws:iam::299840366891:role/aws-sentinel"
   enabled  = true
 }
+
+module "managed_account2" {
+  source   = "./modules/managed_account"
+  role_arn = "arn:aws:iam::736998830959:role/terraform-aws-enable-splunk"
+  enabled  = true
+}
