@@ -21,7 +21,7 @@ variable "region" {
 variable "endpoint_url" {
   type        = string
   description = "The URL endpoint for the HEC."
-  defualt     = "https://splunk.jbennettconsulting.com:443"
+  default     = "https://splunk.jbennettconsulting.com:443"
 }
 
 variable "hec_token" {
