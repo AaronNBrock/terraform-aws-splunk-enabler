@@ -2,7 +2,7 @@ import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 node {
     cleanWs()
     checkout scm
-    docker.image('hashicorp/terraform:0.12.23').inside('--entrypoint=""') {
+    docker.image('hashicorp/terraform:0.12.24').inside('--entrypoint=""') {
         withEnv(['TF_IN_AUTOMATION=true']) {
             stage('initialize') {
                 sh 'terraform init'
